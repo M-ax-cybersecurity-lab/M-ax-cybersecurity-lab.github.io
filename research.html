@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research | {{labNameKo}}</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="section" id="areas">
+  <div class="container">
+    <div class="section-eyebrow">Research</div>
+    <h2 class="section-title">Areas</h2>
+    <p class="section-desc">연구실의 주요 연구 분야입니다.</p>
+    <div class="card-grid" id="areas-mount"></div>
+  </div>
+</section>
+
+<section class="section section-alt" id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-desc">진행 중이거나 완료된 연구 프로젝트입니다.</p>
+    <div class="card-grid" id="projects-mount"></div>
+  </div>
+</section>
+
+<section class="section" id="facility">
+  <div class="container">
+    <h2 class="section-title">Facility</h2>
+    <p class="section-desc">연구실 보유 장비 및 공간입니다.</p>
+    <div class="card-grid" id="facility-mount"></div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<div class="detail-modal" id="detailModal" aria-hidden="true">
+  <div class="detail-modal-backdrop" data-modal-close></div>
+  <div class="detail-modal-panel">
+    <button class="detail-modal-close" data-modal-close aria-label="닫기">&times;</button>
+    <img id="detailModalImage" alt="">
+    <h3 id="detailModalTitle"></h3>
+    <p class="pub-meta" id="detailModalMeta"></p>
+    <p id="detailModalBody"></p>
+  </div>
+</div>
+
+<script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/content.js" defer></script>
+</body>
+</html>
