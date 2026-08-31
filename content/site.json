@@ -26,5 +26,21 @@
   "navProjects": "Projects",
   "navFacility": "Facility",
   "navPublications": "Publications",
-  "navNews": "News"
+  "navNews": "News",
+  "welcomeEyebrow": "Welcome",
+  "welcomeTitle": "연구실 소개",
+  "benefitsEyebrow": "Benefits",
+  "benefitsTitle": "제공 혜택",
+  "contactTitle": "Contact us",
+  "contactButtonLabel": "이메일로 문의하기",
+  "peopleEyebrow": "People",
+  "peopleTitle": "구성원",
+  "researchEyebrow": "Research",
+  "areasTitle": "Areas",
+  "projectsTitle": "Projects",
+  "facilityTitle": "Facility",
+  "publicationsEyebrow": "Publications",
+  "publicationsTitle": "논문 및 연구 실적",
+  "newsEyebrow": "News",
+  "newsTitle": "공지 및 소식"
 }

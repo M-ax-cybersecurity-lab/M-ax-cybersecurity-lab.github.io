@@ -28,6 +28,22 @@ collections:
           - { label: "Research > Areas 설명 문구", name: "areasDesc", widget: "string" }
           - { label: "Research > Projects 설명 문구", name: "projectsDesc", widget: "string" }
           - { label: "Research > Facility 설명 문구", name: "facilityDesc", widget: "string" }
+          - { label: "제목 - About > Welcome 이용구", name: "welcomeEyebrow", widget: "string" }
+          - { label: "제목 - About > Welcome 제목", name: "welcomeTitle", widget: "string" }
+          - { label: "제목 - About > Benefits 이용구", name: "benefitsEyebrow", widget: "string" }
+          - { label: "제목 - About > Benefits 제목", name: "benefitsTitle", widget: "string" }
+          - { label: "제목 - About > Contact 제목", name: "contactTitle", widget: "string" }
+          - { label: "제목 - About > Contact 버튼 텍스트", name: "contactButtonLabel", widget: "string" }
+          - { label: "제목 - People 이용구", name: "peopleEyebrow", widget: "string" }
+          - { label: "제목 - People 제목", name: "peopleTitle", widget: "string" }
+          - { label: "제목 - Research 이용구", name: "researchEyebrow", widget: "string" }
+          - { label: "제목 - Research > Areas 제목", name: "areasTitle", widget: "string" }
+          - { label: "제목 - Research > Projects 제목", name: "projectsTitle", widget: "string" }
+          - { label: "제목 - Research > Facility 제목", name: "facilityTitle", widget: "string" }
+          - { label: "제목 - Publications 이용구", name: "publicationsEyebrow", widget: "string" }
+          - { label: "제목 - Publications 제목", name: "publicationsTitle", widget: "string" }
+          - { label: "제목 - News 이용구", name: "newsEyebrow", widget: "string" }
+          - { label: "제목 - News 제목", name: "newsTitle", widget: "string" }
           - { label: "메뉴 - About", name: "navAbout", widget: "string" }
           - { label: "메뉴 - About > Welcome", name: "navWelcome", widget: "string" }
           - { label: "메뉴 - About > Contact us", name: "navContactUs", widget: "string" }
