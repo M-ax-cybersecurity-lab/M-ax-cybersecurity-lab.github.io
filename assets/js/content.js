@@ -58,12 +58,28 @@ async function renderPeople() {
         meta: person.title,
         image: person.photo,
         detail: person.cv,
+        structured: true,
       });
     });
   });
 }
 
-function openDetailModal({ title, meta, image, detail }) {
+function formatSectionedText(text) {
+  const blocks = text.split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean);
+  return `<div class="cv-grid">${blocks
+    .map((block) => {
+      const lines = block.split("\n").map((l) => l.trim()).filter(Boolean);
+      const heading = lines[0];
+      const items = lines.slice(1).map((l) => l.replace(/^-\s*/, ""));
+      const itemsHtml = items.length
+        ? `<ul>${items.map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ul>`
+        : "";
+      return `<div class="cv-section"><h4>${escapeHtml(heading)}</h4>${itemsHtml}</div>`;
+    })
+    .join("")}</div>`;
+}
+
+function openDetailModal({ title, meta, image, detail, structured }) {
   const modal = document.getElementById("detailModal");
   if (!modal) return;
 
@@ -80,8 +96,15 @@ function openDetailModal({ title, meta, image, detail }) {
   const metaEl = document.getElementById("detailModalMeta");
   metaEl.textContent = meta || "";
   metaEl.style.display = meta ? "block" : "none";
-  document.getElementById("detailModalBody").textContent = detail || "";
 
+  const bodyEl = document.getElementById("detailModalBody");
+  if (structured && detail) {
+    bodyEl.innerHTML = formatSectionedText(detail);
+  } else {
+    bodyEl.textContent = detail || "";
+  }
+
+  modal.querySelector(".detail-modal-panel").classList.toggle("wide", !!structured);
   modal.classList.add("open");
   modal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
