@@ -23,6 +23,11 @@ collections:
           - { label: "환영 메시지", name: "welcomeMessage", widget: "text" }
           - { label: "문의 이메일", name: "contactEmail", widget: "string" }
           - { label: "주소", name: "address", widget: "string" }
+          - { label: "People 페이지 설명 문구", name: "peopleDesc", widget: "string" }
+          - { label: "Benefits 섹션 설명 문구", name: "benefitsDesc", widget: "string" }
+          - { label: "Research > Areas 설명 문구", name: "areasDesc", widget: "string" }
+          - { label: "Research > Projects 설명 문구", name: "projectsDesc", widget: "string" }
+          - { label: "Research > Facility 설명 문구", name: "facilityDesc", widget: "string" }
           - label: "소셜 링크"
             name: "socialLinks"
             widget: "object"
