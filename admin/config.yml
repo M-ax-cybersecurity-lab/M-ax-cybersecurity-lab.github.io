@@ -21,6 +21,13 @@ collections:
           - { label: "태그라인", name: "tagline", widget: "string" }
           - { label: "배너 이미지", name: "bannerImage", widget: "image", required: false }
           - { label: "환영 메시지", name: "welcomeMessage", widget: "text" }
+          - name: "welcomeCards"
+            label: "About > Welcome 카드 목록"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "제목", name: "title", widget: "string" }
+              - { label: "설명", name: "description", widget: "text" }
           - { label: "문의 이메일", name: "contactEmail", widget: "string" }
           - { label: "주소", name: "address", widget: "string" }
           - { label: "People 페이지 설명 문구", name: "peopleDesc", widget: "string" }
