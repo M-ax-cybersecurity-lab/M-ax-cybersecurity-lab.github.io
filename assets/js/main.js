@@ -7,13 +7,19 @@ async function loadPartial(url, mountId) {
   document.getElementById(mountId).innerHTML = html;
 }
 
+function gmailComposeUrl(email) {
+  return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
+}
+
 function applySiteFields(site) {
   document.querySelectorAll("[data-site-field]").forEach((el) => {
     const key = el.getAttribute("data-site-field");
     if (site[key] !== undefined) el.textContent = site[key];
   });
   document.querySelectorAll("[data-site-mailto]").forEach((el) => {
-    el.href = `mailto:${site.contactEmail}`;
+    el.href = gmailComposeUrl(site.contactEmail);
+    el.target = "_blank";
+    el.rel = "noopener";
   });
   document.title = document.title.replace("{{labNameKo}}", site.labNameKo);
 

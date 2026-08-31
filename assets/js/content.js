@@ -15,7 +15,7 @@ function personCard(p, idx) {
     ? `<img class="person-photo" src="${escapeHtml(p.photo)}" alt="${escapeHtml(p.name)}">`
     : `<div class="person-photo">PHOTO</div>`;
   const email = p.email
-    ? `<a class="person-email" href="mailto:${escapeHtml(p.email)}">${escapeHtml(p.email)}</a>`
+    ? `<a class="person-email" href="${escapeHtml(gmailComposeUrl(p.email))}" target="_blank" rel="noopener">${escapeHtml(p.email)}</a>`
     : "";
   const clickable = p.cv ? ` card-clickable" data-detail-idx="${idx}` : "";
   return `
@@ -51,7 +51,8 @@ async function renderPeople() {
     .join("");
 
   mount.querySelectorAll("[data-detail-idx]").forEach((card) => {
-    card.addEventListener("click", () => {
+    card.addEventListener("click", (e) => {
+      if (e.target.closest("a")) return;
       const person = people[Number(card.getAttribute("data-detail-idx"))];
       openDetailModal({
         title: person.name,
