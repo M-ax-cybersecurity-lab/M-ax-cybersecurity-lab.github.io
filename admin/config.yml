@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: m-ax-lab/lab-website
   branch: main
 
 media_folder: "images/uploads"
