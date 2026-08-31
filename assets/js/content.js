@@ -166,17 +166,18 @@ function wireDetailClicks(mount, items, metaFn) {
 
 async function renderResearch() {
   const areasMount = document.getElementById("areas-mount");
+  const welcomeAreasMount = document.getElementById("welcome-areas-mount");
   const projectsMount = document.getElementById("projects-mount");
   const facilityMount = document.getElementById("facility-mount");
-  if (!areasMount && !projectsMount && !facilityMount) return;
+  if (!areasMount && !welcomeAreasMount && !projectsMount && !facilityMount) return;
 
   const research = await fetch("/content/research.json", { cache: "no-cache" }).then((r) => r.json());
+  const areasHtml = research.areas
+    .map((a) => `<div class="card"><h3>${escapeHtml(a.title)}</h3><p>${escapeHtml(a.description)}</p></div>`)
+    .join("");
 
-  if (areasMount) {
-    areasMount.innerHTML = research.areas
-      .map((a) => `<div class="card"><h3>${escapeHtml(a.title)}</h3><p>${escapeHtml(a.description)}</p></div>`)
-      .join("");
-  }
+  if (areasMount) areasMount.innerHTML = areasHtml;
+  if (welcomeAreasMount) welcomeAreasMount.innerHTML = areasHtml;
   if (projectsMount) {
     projectsMount.innerHTML = research.projects.map(projectCardHtml).join("");
     wireDetailClicks(projectsMount, research.projects, (p) =>
