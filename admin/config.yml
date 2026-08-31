@@ -18,56 +18,55 @@ collections:
           - { label: "Lab Name (English)", name: "labNameEn", widget: "string" }
           - { label: "학교", name: "university", widget: "string" }
           - { label: "학과", name: "department", widget: "string" }
-          - { label: "태그라인", name: "tagline", widget: "string" }
           - { label: "배너 이미지", name: "bannerImage", widget: "image", required: false }
-          - { label: "환영 메시지", name: "welcomeMessage", widget: "text" }
-          - name: "welcomeCards"
-            label: "About > Welcome 카드 목록"
-            widget: "list"
-            summary: "{{title}}"
-            fields:
-              - { label: "제목", name: "title", widget: "string" }
-              - { label: "설명", name: "description", widget: "text" }
           - { label: "문의 이메일", name: "contactEmail", widget: "string" }
           - { label: "주소", name: "address", widget: "string" }
-          - { label: "People 페이지 설명 문구", name: "peopleDesc", widget: "string" }
-          - { label: "Benefits 섹션 설명 문구", name: "benefitsDesc", widget: "string" }
-          - { label: "Research > Areas 설명 문구", name: "areasDesc", widget: "string" }
-          - { label: "Research > Projects 설명 문구", name: "projectsDesc", widget: "string" }
-          - { label: "Research > Facility 설명 문구", name: "facilityDesc", widget: "string" }
-          - { label: "제목 - About > Welcome 이용구", name: "welcomeEyebrow", widget: "string" }
-          - { label: "제목 - About > Welcome 제목", name: "welcomeTitle", widget: "string" }
-          - { label: "제목 - About > Benefits 이용구", name: "benefitsEyebrow", widget: "string" }
-          - { label: "제목 - About > Benefits 제목", name: "benefitsTitle", widget: "string" }
-          - { label: "제목 - About > Contact 제목", name: "contactTitle", widget: "string" }
-          - { label: "제목 - About > Contact 버튼 텍스트", name: "contactButtonLabel", widget: "string" }
-          - { label: "제목 - People 이용구", name: "peopleEyebrow", widget: "string" }
-          - { label: "제목 - People 제목", name: "peopleTitle", widget: "string" }
-          - { label: "제목 - Research 이용구", name: "researchEyebrow", widget: "string" }
-          - { label: "제목 - Research > Areas 제목", name: "areasTitle", widget: "string" }
-          - { label: "제목 - Research > Projects 제목", name: "projectsTitle", widget: "string" }
-          - { label: "제목 - Research > Facility 제목", name: "facilityTitle", widget: "string" }
-          - { label: "제목 - Publications 이용구", name: "publicationsEyebrow", widget: "string" }
-          - { label: "제목 - Publications 제목", name: "publicationsTitle", widget: "string" }
-          - { label: "제목 - News 이용구", name: "newsEyebrow", widget: "string" }
-          - { label: "제목 - News 제목", name: "newsTitle", widget: "string" }
-          - { label: "메뉴 - About", name: "navAbout", widget: "string" }
-          - { label: "메뉴 - About > Welcome", name: "navWelcome", widget: "string" }
-          - { label: "메뉴 - About > Benefits", name: "navBenefits", widget: "string" }
-          - { label: "메뉴 - About > Contact us", name: "navContactUs", widget: "string" }
-          - { label: "메뉴 - People", name: "navPeople", widget: "string" }
-          - { label: "메뉴 - Research", name: "navResearch", widget: "string" }
-          - { label: "메뉴 - Research > Areas", name: "navAreas", widget: "string" }
-          - { label: "메뉴 - Research > Projects", name: "navProjects", widget: "string" }
-          - { label: "메뉴 - Research > Facility", name: "navFacility", widget: "string" }
-          - { label: "메뉴 - Publications", name: "navPublications", widget: "string" }
-          - { label: "메뉴 - News", name: "navNews", widget: "string" }
           - label: "소셜 링크"
             name: "socialLinks"
             widget: "object"
             fields:
               - { label: "GitHub", name: "github", widget: "string", required: false }
               - { label: "YouTube", name: "youtube", widget: "string", required: false }
+
+  - name: "nav"
+    label: "메뉴"
+    files:
+      - name: "nav"
+        label: "메뉴 라벨"
+        file: "content/nav.json"
+        fields:
+          - { label: "About", name: "navAbout", widget: "string" }
+          - { label: "About > Welcome", name: "navWelcome", widget: "string" }
+          - { label: "About > Benefits", name: "navBenefits", widget: "string" }
+          - { label: "About > Contact us", name: "navContactUs", widget: "string" }
+          - { label: "People", name: "navPeople", widget: "string" }
+          - { label: "Research", name: "navResearch", widget: "string" }
+          - { label: "Research > Areas", name: "navAreas", widget: "string" }
+          - { label: "Research > Projects", name: "navProjects", widget: "string" }
+          - { label: "Research > Facility", name: "navFacility", widget: "string" }
+          - { label: "Publications", name: "navPublications", widget: "string" }
+          - { label: "News", name: "navNews", widget: "string" }
+
+  - name: "about"
+    label: "About"
+    files:
+      - name: "about"
+        label: "About"
+        file: "content/about.json"
+        fields:
+          - { label: "Welcome 이용구", name: "welcomeEyebrow", widget: "string" }
+          - { label: "Welcome 제목", name: "welcomeTitle", widget: "string" }
+          - { label: "태그라인", name: "tagline", widget: "string" }
+          - { label: "환영 메시지", name: "welcomeMessage", widget: "text" }
+          - name: "welcomeCards"
+            label: "Welcome 카드 목록"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "제목", name: "title", widget: "string" }
+              - { label: "설명", name: "description", widget: "text" }
+          - { label: "Contact 제목", name: "contactTitle", widget: "string" }
+          - { label: "Contact 버튼 텍스트", name: "contactButtonLabel", widget: "string" }
 
   - name: "people"
     label: "People"
@@ -76,6 +75,9 @@ collections:
         label: "People"
         file: "content/people.json"
         fields:
+          - { label: "이용구", name: "peopleEyebrow", widget: "string" }
+          - { label: "제목", name: "peopleTitle", widget: "string" }
+          - { label: "설명 문구", name: "peopleDesc", widget: "string" }
           - name: "people"
             label: "구성원"
             widget: "list"
@@ -107,6 +109,9 @@ collections:
         label: "Research"
         file: "content/research.json"
         fields:
+          - { label: "이용구", name: "researchEyebrow", widget: "string" }
+          - { label: "Areas 제목", name: "areasTitle", widget: "string" }
+          - { label: "Areas 설명 문구", name: "areasDesc", widget: "string" }
           - name: "areas"
             label: "Areas (연구 분야)"
             widget: "list"
@@ -114,6 +119,8 @@ collections:
             fields:
               - { label: "제목", name: "title", widget: "string" }
               - { label: "설명", name: "description", widget: "text" }
+          - { label: "Projects 제목", name: "projectsTitle", widget: "string" }
+          - { label: "Projects 설명 문구", name: "projectsDesc", widget: "string" }
           - name: "projects"
             label: "Projects (연구 프로젝트)"
             widget: "list"
@@ -125,6 +132,8 @@ collections:
               - { label: "요약 설명 (카드에 표시)", name: "description", widget: "text" }
               - { label: "사진", name: "image", widget: "image", required: false }
               - { label: "상세 설명 (클릭 시 모달에 표시)", name: "detail", widget: "text", required: false }
+          - { label: "Facility 제목", name: "facilityTitle", widget: "string" }
+          - { label: "Facility 설명 문구", name: "facilityDesc", widget: "string" }
           - name: "facility"
             label: "Facility (보유 장비/공간)"
             widget: "list"
@@ -136,12 +145,15 @@ collections:
               - { label: "상세 설명 (클릭 시 모달에 표시)", name: "detail", widget: "text", required: false }
 
   - name: "benefits"
-    label: "Benefits (제공 혜택)"
+    label: "Benefits"
     files:
       - name: "benefits"
         label: "Benefits"
         file: "content/benefits.json"
         fields:
+          - { label: "이용구", name: "benefitsEyebrow", widget: "string" }
+          - { label: "제목", name: "benefitsTitle", widget: "string" }
+          - { label: "설명 문구", name: "benefitsDesc", widget: "string" }
           - name: "benefits"
             label: "혜택 목록"
             widget: "list"
@@ -157,6 +169,8 @@ collections:
         label: "Publications"
         file: "content/publications.json"
         fields:
+          - { label: "이용구", name: "publicationsEyebrow", widget: "string" }
+          - { label: "제목", name: "publicationsTitle", widget: "string" }
           - name: "publications"
             label: "연도별 논문 목록"
             widget: "list"
@@ -181,6 +195,8 @@ collections:
         label: "News"
         file: "content/news.json"
         fields:
+          - { label: "이용구", name: "newsEyebrow", widget: "string" }
+          - { label: "제목", name: "newsTitle", widget: "string" }
           - name: "news"
             label: "공지 목록"
             widget: "list"

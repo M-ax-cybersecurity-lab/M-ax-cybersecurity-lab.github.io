@@ -1,4 +1,7 @@
 {
+  "benefitsEyebrow": "Benefits",
+  "benefitsTitle": "제공 혜택",
+  "benefitsDesc": "연구실 구성원에게 제공하는 지원 사항입니다.",
   "benefits": [
     {
       "title": "대학원 장학금 지원",

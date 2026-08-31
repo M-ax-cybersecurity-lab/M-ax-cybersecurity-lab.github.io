@@ -1,61 +1,13 @@
 {
+  "labNameKo": "해사 AX 보안공학 연구실",
   "labNameEn": "M-AX Cybersecurity Lab",
-  "welcomeMessage": "저희 연구실은 한국해양대학교 해사인공지능보안학과 사이버보안전공 소속으로, 인공지능 기반 보안 기술과 해양 사이버보안 문제를 연구합니다.",
+  "university": "한국해양대학교",
+  "department": "해사인공지능보안학과 (사이버보안전공)",
+  "bannerImage": "",
+  "contactEmail": "meraki4.1st@gmail.com",
+  "address": "부산광역시 영도구 태종로 727 한국해양대학교",
   "socialLinks": {
     "github": "",
     "youtube": ""
-  },
-  "tagline": "Maritime AI & Cybersecurity Research",
-  "university": "한국해양대학교",
-  "bannerImage": "",
-  "department": "해사인공지능보안학과 (사이버보안전공)",
-  "address": "부산광역시 영도구 태종로 727 한국해양대학교",
-  "labNameKo": "해사 AX 보안공학 연구실",
-  "contactEmail": "meraki4.1st@gmail.com",
-  "peopleDesc": "이메일 아이콘을 클릭하면 바로 메일을 보낼 수 있습니다.",
-  "benefitsDesc": "연구실 구성원에게 제공하는 지원 사항입니다.",
-  "areasDesc": "연구실의 주요 연구 분야입니다.",
-  "projectsDesc": "진행 중이거나 완료된 연구 프로젝트입니다.",
-  "facilityDesc": "연구실 보유 장비 및 공간입니다.",
-  "navAbout": "About",
-  "navWelcome": "Welcome",
-  "navBenefits": "Benefits",
-  "navContactUs": "Contact us",
-  "navPeople": "People",
-  "navResearch": "Research",
-  "navAreas": "Areas",
-  "navProjects": "Projects",
-  "navFacility": "Facility",
-  "navPublications": "Publications",
-  "navNews": "News",
-  "welcomeEyebrow": "Welcome",
-  "welcomeTitle": "연구실 소개",
-  "welcomeCards": [
-    {
-      "title": "AI Security",
-      "description": "적대적 공격 및 방어, 신뢰성 있는 AI 시스템 설계를 연구합니다."
-    },
-    {
-      "title": "Maritime Cybersecurity",
-      "description": "선박·항만 시스템 및 OT/ICS 환경의 사이버보안을 연구합니다."
-    },
-    {
-      "title": "Applied Cryptography",
-      "description": "안전한 시스템 설계를 위한 암호학적 기법을 연구합니다."
-    }
-  ],
-  "benefitsEyebrow": "Benefits",
-  "benefitsTitle": "제공 혜택",
-  "contactTitle": "Contact us",
-  "contactButtonLabel": "이메일로 문의하기",
-  "peopleEyebrow": "People",
-  "peopleTitle": "구성원",
-  "researchEyebrow": "Research",
-  "areasTitle": "Areas",
-  "projectsTitle": "Projects",
-  "facilityTitle": "Facility",
-  "publicationsEyebrow": "Publications",
-  "publicationsTitle": "논문 및 연구 실적",
-  "newsEyebrow": "News",
-  "newsTitle": "공지 및 소식"
+  }
 }

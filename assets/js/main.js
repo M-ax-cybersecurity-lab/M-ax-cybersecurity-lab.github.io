@@ -65,13 +65,34 @@ function wireNavToggle() {
   });
 }
 
+// Site-wide text fields (labels, titles, descriptions) live spread across
+// several content files, each owned by the page/collection it belongs to.
+// Merge them into one lookup object for data-site-field/data-site-mailto.
+const SITE_FIELD_SOURCES = [
+  "/content/site.json",
+  "/content/nav.json",
+  "/content/about.json",
+  "/content/people.json",
+  "/content/research.json",
+  "/content/benefits.json",
+  "/content/publications.json",
+  "/content/news.json",
+];
+
+async function loadSiteFields() {
+  const parts = await Promise.all(
+    SITE_FIELD_SOURCES.map((url) => fetch(url, { cache: "no-cache" }).then((r) => r.json()))
+  );
+  return Object.assign({}, ...parts);
+}
+
 async function initLayout() {
   await Promise.all([
     loadPartial("/assets/partials/header.html", "site-header"),
     loadPartial("/assets/partials/footer.html", "site-footer"),
   ]);
 
-  const site = await fetch("/content/site.json", { cache: "no-cache" }).then((r) => r.json());
+  const site = await loadSiteFields();
   applySiteFields(site);
   setActiveNav();
   wireNavToggle();

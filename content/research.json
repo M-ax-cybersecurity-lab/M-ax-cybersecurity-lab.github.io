@@ -1,4 +1,11 @@
 {
+  "researchEyebrow": "Research",
+  "areasTitle": "Areas",
+  "areasDesc": "연구실의 주요 연구 분야입니다.",
+  "projectsTitle": "Projects",
+  "projectsDesc": "진행 중이거나 완료된 연구 프로젝트입니다.",
+  "facilityTitle": "Facility",
+  "facilityDesc": "연구실 보유 장비 및 공간입니다.",
   "areas": [
     {
       "title": "AI Security",

@@ -167,8 +167,8 @@ function wireDetailClicks(mount, items, metaFn) {
 async function renderWelcomeCards() {
   const mount = document.getElementById("welcome-cards-mount");
   if (!mount) return;
-  const site = await fetch("/content/site.json", { cache: "no-cache" }).then((r) => r.json());
-  mount.innerHTML = (site.welcomeCards || [])
+  const about = await fetch("/content/about.json", { cache: "no-cache" }).then((r) => r.json());
+  mount.innerHTML = (about.welcomeCards || [])
     .map((c) => `<div class="card"><h3>${escapeHtml(c.title)}</h3><p>${escapeHtml(c.description)}</p></div>`)
     .join("");
 }
