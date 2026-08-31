@@ -15,6 +15,9 @@
 ### Git Gateway 대신 GitHub OAuth를 쓰는 이유
 Netlify Identity + Git Gateway로 진행하다가 Identity 대시보드가 정상 동작하지 않는 문제 발생. 원인은 private 저장소여서가 아니라 **Git Gateway가 Netlify에서 deprecated 상태**이기 때문(신규 설정 비권장, 버그 수정 중단). Identity 자체는 살아있지만 Git Gateway 연동에 문제가 있어, 여전히 정식 지원되는 GitHub OAuth 백엔드로 전환함. 설정법: ① GitHub에서 OAuth App 등록 (Authorization callback URL: `https://api.netlify.com/auth/done`) ② Netlify: Project configuration → Access & security → OAuth → GitHub에 Client ID/Secret 입력.
 
+## 작업 워크플로우 (항상 지킬 것)
+`/admin`(Decap CMS)에서 랩 멤버가 직접 콘텐츠를 수정하면 이 세션이 모르는 사이에 GitHub 레포에 새 커밋이 생긴다. 그래서 **로컬에서 뭔가를 수정하고 커밋하기 전에 항상 먼저 `git pull`로 최신 상태를 받아온 뒤 작업을 시작한다** — 순서: `git pull` → (필요시 원격에 새 커밋 있으면 무슨 내용인지 확인) → 로컬 수정 → 커밋 → push. 이렇게 하지 않으면 push가 거절되거나(non-fast-forward), 최악의 경우 CMS로 방금 바뀐 콘텐츠를 모르고 덮어쓸 수 있음.
+
 ## 현재 단계
 **배포 스택 완성.** 랩 이름 확정, GitHub 조직(`m-ax-lab`)/레포(`lab-website`, public) 생성 및 push, Netlify 연결(https://m-ax-cybersecurity-lab.netlify.app/), GitHub OAuth App 등록 및 Netlify Access & security 연결, `/admin` 로그인까지 전부 확인 완료. 남은 건 실제 콘텐츠(구성원/논문/뉴스/연구 정보, 사진) 입력뿐.
 
