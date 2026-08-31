@@ -74,7 +74,6 @@ const SITE_FIELD_SOURCES = [
   "/content/about.json",
   "/content/people.json",
   "/content/research.json",
-  "/content/benefits.json",
   "/content/publications.json",
   "/content/news.json",
 ];

@@ -65,6 +65,16 @@ collections:
             fields:
               - { label: "제목", name: "title", widget: "string" }
               - { label: "설명", name: "description", widget: "text" }
+          - { label: "Benefits 이용구", name: "benefitsEyebrow", widget: "string" }
+          - { label: "Benefits 제목", name: "benefitsTitle", widget: "string" }
+          - { label: "Benefits 설명 문구", name: "benefitsDesc", widget: "string" }
+          - name: "benefits"
+            label: "Benefits 혜택 목록"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "제목", name: "title", widget: "string" }
+              - { label: "설명", name: "description", widget: "text" }
           - { label: "Contact 제목", name: "contactTitle", widget: "string" }
           - { label: "Contact 버튼 텍스트", name: "contactButtonLabel", widget: "string" }
 
@@ -143,24 +153,6 @@ collections:
               - { label: "요약 설명 (카드에 표시)", name: "description", widget: "text" }
               - { label: "사진", name: "image", widget: "image", required: false }
               - { label: "상세 설명 (클릭 시 모달에 표시)", name: "detail", widget: "text", required: false }
-
-  - name: "benefits"
-    label: "Benefits"
-    files:
-      - name: "benefits"
-        label: "Benefits"
-        file: "content/benefits.json"
-        fields:
-          - { label: "이용구", name: "benefitsEyebrow", widget: "string" }
-          - { label: "제목", name: "benefitsTitle", widget: "string" }
-          - { label: "설명 문구", name: "benefitsDesc", widget: "string" }
-          - name: "benefits"
-            label: "혜택 목록"
-            widget: "list"
-            summary: "{{title}}"
-            fields:
-              - { label: "제목", name: "title", widget: "string" }
-              - { label: "설명", name: "description", widget: "text" }
 
   - name: "publications"
     label: "Publications"

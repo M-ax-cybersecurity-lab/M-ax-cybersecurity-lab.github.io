@@ -201,7 +201,7 @@ async function renderResearch() {
 async function renderBenefits() {
   const mount = document.getElementById("benefits-mount");
   if (!mount) return;
-  const benefits = await fetch("/content/benefits.json", { cache: "no-cache" }).then((r) => r.json()).then((d) => d.benefits);
+  const benefits = await fetch("/content/about.json", { cache: "no-cache" }).then((r) => r.json()).then((d) => d.benefits);
 
   mount.innerHTML = benefits
     .map((b) => `<div class="card"><h3>${escapeHtml(b.title)}</h3><p>${escapeHtml(b.description)}</p></div>`)
