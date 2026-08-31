@@ -28,6 +28,16 @@ collections:
           - { label: "Research > Areas 설명 문구", name: "areasDesc", widget: "string" }
           - { label: "Research > Projects 설명 문구", name: "projectsDesc", widget: "string" }
           - { label: "Research > Facility 설명 문구", name: "facilityDesc", widget: "string" }
+          - { label: "메뉴 - About", name: "navAbout", widget: "string" }
+          - { label: "메뉴 - About > Welcome", name: "navWelcome", widget: "string" }
+          - { label: "메뉴 - About > Contact us", name: "navContactUs", widget: "string" }
+          - { label: "메뉴 - People", name: "navPeople", widget: "string" }
+          - { label: "메뉴 - Research", name: "navResearch", widget: "string" }
+          - { label: "메뉴 - Research > Areas", name: "navAreas", widget: "string" }
+          - { label: "메뉴 - Research > Projects", name: "navProjects", widget: "string" }
+          - { label: "메뉴 - Research > Facility", name: "navFacility", widget: "string" }
+          - { label: "메뉴 - Publications", name: "navPublications", widget: "string" }
+          - { label: "메뉴 - News", name: "navNews", widget: "string" }
           - label: "소셜 링크"
             name: "socialLinks"
             widget: "object"
