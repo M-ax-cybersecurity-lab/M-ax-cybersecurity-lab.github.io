@@ -73,8 +73,18 @@
   3. `https://<사이트주소>/admin`에서 "Login with GitHub"으로 로그인 확인
 - GitHub Pages test용 `docs/` 폴더는 test 단계 종료로 사용자가 직접 삭제함
 
+### 배포 스택 완성 (2026-08-27)
+- GitHub 조직 `m-ax-lab` / 레포 `lab-website` (public 전환 완료 — Netlify 무료 플랜은 조직 소유 private 레포 배포를 지원 안 해서 public으로 전환함, 소스에 민감정보 없음 확인함)
+- Netlify 배포 완료: https://m-ax-cybersecurity-lab.netlify.app/ — Visitor access를 Public으로 변경함 (2026-07-28부터 신규 팀은 기본 Private로 시작되는 정책 때문에 처음엔 팀 로그인 없이 접속 불가였음)
+- GitHub OAuth App 등록 + Netlify Access & security에 연결 완료, `/admin` 로그인 확인 완료 → **기본 세팅 끝**
+- 동작 방식: `/admin`에서 콘텐츠 수정 후 Publish → Decap CMS가 레포에 자동 커밋 → Netlify가 감지해서 자동 재배포
+
+### 실제 콘텐츠 입력 시작 (2026-08-27)
+- **People**: 이대성 교수님 실제 정보 반영 ([학과 교수 소개 페이지](https://www.kmou.ac.kr/aisec/ad/tepDept/main/view.do?mi=4916&teaSn=4740)에서 가져옴) — 학력/경력/연구분야는 `cv` 필드에 담아 카드 클릭 시 모달로 표시됨
+- **배너**: 처음엔 KMOU 공식 홈페이지의 캠퍼스 항공사진("2025년 대학전경")을 다운로드해 적용했으나, 연구실과 무관하게 전경만 나온 느낌이라는 피드백으로 폐기. 대신 사이트 톤(네이비·시안)에 맞는 **보안/네트워크 느낌의 추상 SVG 패턴**을 히어로 배경에 적용 (`assets/css/style.css`의 `.hero` — data URI SVG, 원, 대각선으로 회로/네트워크 느낌 표현). 다운로드했던 사진 파일은 삭제함. `content/site.json`의 `bannerImage` 필드는 비워둔 채 유지 — 나중에 실제 사진을 쓰고 싶으면 CMS에서 업로드 시 이 패턴 대신 사진이 적용됨
+
 ### 다음 단계
-GitHub OAuth App 등록 → Netlify Access & security에 연결 → `/admin` 로그인 확인 → 실제 콘텐츠(구성원/논문/사진 등) 입력
+나머지 콘텐츠(구성원 추가, 논문, 뉴스, 연구 프로젝트, 시설 사진 등) 입력 — `/admin`에서 직접 하거나, 자료 주시면 `content/*.json`에 반영 가능
 
 ### 참고 사이트
 [ref_link/link.md](ref_link/link.md) 참고 — 특히 `lab.wschoi.com`의 메일 바로 발송되는 문의 폼 형태 참고할 만함.

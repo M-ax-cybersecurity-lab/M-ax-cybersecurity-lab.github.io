@@ -6,16 +6,17 @@
 - 랩 이름: **해사 AX 보안공학 연구실** (영문: M-AX Cybersecurity Lab) — 확정됨 (2026-08-27), `content/site.json`의 labNameKo/labNameEn에 반영됨
 
 ## 배포 스택
-- GitHub: 개인 계정이 아닌 **Organization(조직 계정)** `m-ax-lab` 생성 완료, 그 아래 `lab-website` 레포 생성 및 push 완료 — 특정 개인이 나가거나 계정을 삭제해도 사이트가 유지되도록 함
+- **사이트 주소**: https://m-ax-cybersecurity-lab.netlify.app/ (Visitor access는 Public으로 설정됨 — 2026-07-28부터 Netlify 신규 팀 기본값이 Private라서 처음엔 팀 로그인 없이 접속 불가였다가 수정함)
+- GitHub: 개인 계정이 아닌 **Organization(조직 계정)** `m-ax-lab` 생성 완료, 그 아래 `lab-website` 레포(public) 생성 및 push 완료 — 특정 개인이 나가거나 계정을 삭제해도 사이트가 유지되도록 함. Netlify 무료 플랜은 조직 소유 private 레포 배포를 지원하지 않아 public으로 전환함 (소스에 민감정보 없음 확인됨)
 - Netlify: 무료 티어로 호스팅, 레포 연결 및 배포 완료
-- Decap CMS 인증: **GitHub OAuth 방식** (Netlify Identity + Git Gateway 아님 — 2026-08-27에 전환, 이유는 아래 참고). `admin/config.yml`의 backend가 `{name: github, repo: m-ax-lab/lab-website, branch: main}`
+- Decap CMS 인증: **GitHub OAuth 방식** (Netlify Identity + Git Gateway 아님 — 2026-08-27에 전환, 이유는 아래 참고). `admin/config.yml`의 backend가 `{name: github, repo: m-ax-lab/lab-website, branch: main}`. `/admin`에서 GitHub 로그인 후 콘텐츠 편집 → 저장하면 레포에 자동 커밋 → Netlify 자동 재배포
 - 전체 스택 비용: 무료 (커스텀 도메인 구매는 선택사항)
 
 ### Git Gateway 대신 GitHub OAuth를 쓰는 이유
 Netlify Identity + Git Gateway로 진행하다가 Identity 대시보드가 정상 동작하지 않는 문제 발생. 원인은 private 저장소여서가 아니라 **Git Gateway가 Netlify에서 deprecated 상태**이기 때문(신규 설정 비권장, 버그 수정 중단). Identity 자체는 살아있지만 Git Gateway 연동에 문제가 있어, 여전히 정식 지원되는 GitHub OAuth 백엔드로 전환함. 설정법: ① GitHub에서 OAuth App 등록 (Authorization callback URL: `https://api.netlify.com/auth/done`) ② Netlify: Project configuration → Access & security → OAuth → GitHub에 Client ID/Secret 입력.
 
 ## 현재 단계
-랩 이름 확정, GitHub 조직/레포 생성 및 push, Netlify 연결(배포)까지 완료. 남은 단계: GitHub OAuth App 등록 → Netlify Access & security에 연결 → `/admin` 로그인 확인 (사용자가 직접 진행).
+**배포 스택 완성.** 랩 이름 확정, GitHub 조직(`m-ax-lab`)/레포(`lab-website`, public) 생성 및 push, Netlify 연결(https://m-ax-cybersecurity-lab.netlify.app/), GitHub OAuth App 등록 및 Netlify Access & security 연결, `/admin` 로그인까지 전부 확인 완료. 남은 건 실제 콘텐츠(구성원/논문/뉴스/연구 정보, 사진) 입력뿐.
 
 ## 콘텐츠/디자인 원칙
 - 레이아웃(디자인) 코드와 콘텐츠(구성원, 논문, 뉴스, 사진 등)는 분리해서 관리 — 콘텐츠 파일만 수정하면 되도록 구성 (추후 Decap CMS 편집 대상)
@@ -36,7 +37,8 @@ Netlify Identity + Git Gateway로 진행하다가 Identity 대시보드가 정�
 - Decap CMS 설정: `admin/config.yml`(컬렉션 정의), `admin/index.html` — GitHub OAuth App을 Netlify에 연결하기 전까지는 작동 안 함
 - 렌더링 로직: `assets/js/content.js`
 - 로컬 미리보기: `.claude/launch.json` → `python3 -m http.server 5173`
-- 랩 이름은 확정 반영됨(`content/site.json`), 구성원/논문/뉴스 등은 아직 placeholder 상태
+- 랩 이름은 확정 반영됨(`content/site.json`), 구성원 중 지도교수(이대성)는 실제 정보 반영됨, 나머지 구성원/논문/뉴스 등은 아직 placeholder 상태
+- 배너는 실사진이 아니라 CSS로 그린 보안/네트워크 느낌의 추상 SVG 패턴 (`assets/css/style.css`의 `.hero`). `site.json`의 `bannerImage`를 채우면 그 사진이 우선 적용되도록 되어 있음(현재는 비어있음)
 - Research의 Facility/Project는 카드 클릭 시 모달로 사진+상세설명(`detail` 필드) 표시 (`assets/js/content.js`의 openDetailModal)
 - People 표기는 영문 (역할 그룹명 및 개별 직함 모두)
 - 콘텐츠 JSON은 전부 배열 구조 — Decap CMS 연결 시 list/folder collection으로 매핑하면 관리자 페이지에서 항목 추가/삭제가 자동 제공됨
