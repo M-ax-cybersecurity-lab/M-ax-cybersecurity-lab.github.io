@@ -57,7 +57,6 @@ async function renderPeople() {
       openDetailModal({
         title: person.name,
         meta: person.title,
-        image: person.photo,
         detail: person.cv,
         structured: true,
       });
