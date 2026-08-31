@@ -8,34 +8,21 @@
       "email": "dslee@kmou.ac.kr",
       "bio": "Professor, Dept. of Maritime AI & Cyber Security. Director, Cybersecurity Engineering Research Center. Leads the Next-Generation Convergence Security Lab (Room 903, Sanhak Hub Bldg.). Research interests: AX Security, Convergence Security, Network Security, Maritime Cybersecurity, ICS Security, Critical Information Infrastructure Protection.",
       "cv": "Education\n- Ph.D. in Information Engineering, Inha University (2008)\n- M.S. in Electronic Computer Engineering, Inha University (2001)\n- B.S. in Electronic Computer Engineering, Inha University (1999)\n\nCareer\n- Professor, Korea Maritime & Ocean University (2024–present)\n- Director, Cybersecurity Engineering Research Center (2024–present)\n- Director, Maritime AX Talent Bootcamp Program (2026–present)\n- President, Korea Institute of Information and Communication Engineering (2025–present)\n- Director, Busan-Ulsan-Gyeongnam Regional University White-Hat Hacker Training Program (2020–present)\n\nResearch Interests\n- AX Security, Convergence Security, Network Security\n- Maritime Cybersecurity\n- Industrial Control Systems (ICS) Security\n- Critical Information Infrastructure Protection",
-      "links": { "scholar": "", "homepage": "" }
-    },
-    {
-      "role": "PhD",
-      "name": "Chulsoo Kim",
-      "title": "Ph.D. Student",
-      "photo": "",
-      "email": "example2@kmou.ac.kr",
-      "bio": "",
-      "links": { "scholar": "", "github": "" }
+      "links": {
+        "scholar": "",
+        "homepage": ""
+      }
     },
     {
       "role": "MS",
-      "name": "Younghee Lee",
+      "name": "Sungyoon Jung",
       "title": "M.S. Student",
       "photo": "",
-      "email": "example3@kmou.ac.kr",
+      "email": "meraki4.1st@gmail.com",
       "bio": "",
-      "links": { "github": "" }
-    },
-    {
-      "role": "Alumni",
-      "name": "Minsu Park",
-      "title": "M.S. 2025 · now at OOO",
-      "photo": "",
-      "email": "",
-      "bio": "",
-      "links": {}
+      "links": {
+        "github": ""
+      }
     }
   ]
 }
