@@ -46,6 +46,7 @@ collections:
           - { label: "제목 - News 제목", name: "newsTitle", widget: "string" }
           - { label: "메뉴 - About", name: "navAbout", widget: "string" }
           - { label: "메뉴 - About > Welcome", name: "navWelcome", widget: "string" }
+          - { label: "메뉴 - About > Benefits", name: "navBenefits", widget: "string" }
           - { label: "메뉴 - About > Contact us", name: "navContactUs", widget: "string" }
           - { label: "메뉴 - People", name: "navPeople", widget: "string" }
           - { label: "메뉴 - Research", name: "navResearch", widget: "string" }
