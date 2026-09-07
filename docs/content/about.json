@@ -6,11 +6,15 @@
   "welcomeCards": [
     {
       "title": "AI Security",
-      "description": "적대적 공격 및 방어, 신뢰성 있는 AI 시스템 설계를 연구합니다."
+      "description": "AI를 이용한 공격·방어 기술의 확산과, 탑재된 AI 모델의 보안 취약점을 함께 연구합니다.",
+      "image": "",
+      "detail": "연구 배경\n- 자율운항선박(MASS) 등 AI가 결합된 해양 시스템이 늘어나면서, AI를 활용한 공격·방어 기술과 AI 모델 자체의 보안 취약점 모두가 중요한 연구 주제로 떠오르고 있습니다.\n\nAI 에이전틱 공격·방어 확산\n- AI 에이전트를 활용한 자동화된 공격 기법 및 대응 방어 기술\n- AI 기반 이상 탐지·침입 탐지 등 보안 자동화 기술\n\n탑재 AI 모델 취약점\n- 적대적 공격(Adversarial Attack) 기법 및 방어 기술\n- AI 모델의 취약점 분석 및 강건성(Robustness) 평가\n- 신뢰 가능한(Trustworthy) AI 시스템 설계"
     },
     {
       "title": "Maritime Cybersecurity",
-      "description": "선박·항만 시스템 및 OT/ICS 환경의 사이버보안을 연구합니다."
+      "description": "선박, 항만, 자율운항선박(MASS) 등 해양산업 전반의 사이버보안을 연구합니다.",
+      "image": "",
+      "detail": "연구 배경\n- 선박·항만 시설의 디지털화·자동화와 자율운항선박(MASS, Maritime Autonomous Surface Ships)의 등장으로, 항해·기관 제어시스템 등 운영기술(OT) 환경이 새로운 사이버 위협에 노출되고 있습니다.\n\n주요 연구 주제\n- 선박 운영기술(OT/ICS) 보안 및 사이버복원력\n- 자율운항선박(MASS) 사이버보안\n- 항만 인프라 및 물류 시스템 보안\n- 해양 기자재(항해·통신 장비 등) 보안성 평가\n\n관련 국제표준\n- IACS UR E26 (Cyber resilience of ships)\n- IACS UR E27 (Cyber resilience of on-board systems and equipment)\n- 2024년 7월 이후 건조계약 선박부터 적용되는 국제선급연합회(IACS) 사이버복원력 요건 대응 연구 수행"
     }
   ],
   "benefitsEyebrow": "Benefits",

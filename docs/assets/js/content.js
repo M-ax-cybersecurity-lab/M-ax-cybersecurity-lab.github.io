@@ -167,9 +167,29 @@ async function renderWelcomeCards() {
   const mount = document.getElementById("welcome-cards-mount");
   if (!mount) return;
   const about = await fetch("/content/about.json", { cache: "no-cache" }).then((r) => r.json());
-  mount.innerHTML = (about.welcomeCards || [])
-    .map((c) => `<div class="card"><h3>${escapeHtml(c.title)}</h3><p>${escapeHtml(c.description)}</p></div>`)
+  const cards = about.welcomeCards || [];
+
+  mount.innerHTML = cards
+    .map((c, idx) => {
+      const img = c.image
+        ? `<img class="card-thumb" src="${escapeHtml(c.image)}" alt="${escapeHtml(c.title)}">`
+        : "";
+      const clickable = c.detail ? ` card-clickable" data-detail-idx="${idx}` : "";
+      return `<div class="card welcome-card${clickable}">${img}<h3>${escapeHtml(c.title)}</h3><p>${escapeHtml(c.description)}</p></div>`;
+    })
     .join("");
+
+  mount.querySelectorAll("[data-detail-idx]").forEach((card) => {
+    card.addEventListener("click", () => {
+      const c = cards[Number(card.getAttribute("data-detail-idx"))];
+      openDetailModal({
+        title: c.title,
+        image: c.image,
+        detail: c.detail,
+        structured: true,
+      });
+    });
+  });
 }
 
 async function renderResearch() {

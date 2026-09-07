@@ -9,11 +9,11 @@
   "areas": [
     {
       "title": "AI Security",
-      "description": "적대적 공격(Adversarial Attack) 및 방어, AI 모델의 취약점 분석과 신뢰성 있는 AI 시스템 설계에 대해 연구합니다."
+      "description": "AI 에이전트를 이용한 공격·방어 기술 확산과, 자율운항선박 등에 탑재되는 AI 모델의 취약점 분석 및 강건성 연구를 수행합니다."
     },
     {
       "title": "Maritime Cybersecurity",
-      "description": "선박 및 항만 시스템, OT/ICS 환경을 대상으로 한 사이버보안 위협 분석과 대응 기술을 연구합니다."
+      "description": "선박, 항만, 자율운항선박(MASS) 등 해양산업 전반의 OT/ICS 환경을 대상으로 한 사이버보안 위협 분석과 대응 기술을 연구합니다."
     },
     {
       "title": "Applied Cryptography & Network Security",

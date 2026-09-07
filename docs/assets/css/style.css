@@ -298,6 +298,20 @@ h1, h2, h3, h4 { line-height: 1.3; margin: 0 0 0.5em; }
   margin-bottom: 20px;
 }
 #people-mount .card-grid { grid-template-columns: 1fr; }
+
+#welcome-cards-mount { grid-template-columns: 1fr; gap: 20px; }
+.welcome-card { padding: 32px; position: relative; }
+.welcome-card h3 { font-size: 1.35rem; }
+.welcome-card p { font-size: 0.98rem; max-width: 780px; }
+.welcome-card.card-clickable::after {
+  content: "자세히 보기 →";
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-cyan-500);
+}
+.welcome-card .card-thumb { height: 220px; }
 .person-card {
   display: flex;
   gap: 20px;
