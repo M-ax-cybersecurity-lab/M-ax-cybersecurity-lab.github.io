@@ -26,19 +26,80 @@
   "projects": [
     {
       "title": "해양 AX 인재양성 부트캠프 사업",
+      "titleEn": "Maritime AX Talent Development Bootcamp Program",
       "period": "2026 - 진행중",
       "funding": "확인 예정",
       "description": "해양 분야 AI 전환(AX)을 이끌 전문인재를 양성하는 부트캠프형 교육 사업입니다.",
+      "descriptionEn": "A bootcamp-style training program that cultivates professionals to lead AI transformation (AX) in the maritime field.",
       "image": "",
-      "detail": "상세 내용은 추후 업데이트 예정입니다."
+      "detail": "상세 내용은 추후 업데이트 예정입니다.",
+      "detailEn": "Details to be updated soon."
     },
     {
       "title": "정보보호특성화대학 사업단",
+      "titleEn": "Information Security Specialized University Program",
       "period": "2026 - 진행중",
       "funding": "확인 예정",
       "description": "정보보호 분야 전문인력 양성을 위한 정보보호특성화대학 지원 사업입니다.",
+      "descriptionEn": "A government-supported program under KMOU's Information Security Specialized University track to cultivate information security professionals.",
       "image": "",
-      "detail": "상세 내용은 추후 업데이트 예정입니다."
+      "detail": "상세 내용은 추후 업데이트 예정입니다.",
+      "detailEn": "Details to be updated soon."
+    },
+    {
+      "title": "항만 사이버공격 시나리오 설계 및 우선순위 선정·검증",
+      "titleEn": "Design and Prioritization/Verification of Port Cyberattack Scenarios",
+      "period": "2025.06 - 2025.11",
+      "funding": "국립한국해양대학교 산학협력단",
+      "description": "항만 사이버공격 시나리오를 설계하고 공격 유형별 우선순위를 선정·검증하는 연구과제입니다.",
+      "descriptionEn": "A research project designing port cyberattack scenarios and prioritizing and verifying them by attack type.",
+      "image": "",
+      "detail": "상세 내용은 추후 업데이트 예정입니다.",
+      "detailEn": "Details to be updated soon."
+    },
+    {
+      "title": "해양 사이버보안 사이버훈련 시나리오 및 콘텐츠 연구",
+      "titleEn": "Research on Maritime Cybersecurity Training Scenarios and Content",
+      "period": "2024.04 - 2025.03",
+      "funding": "확인 예정",
+      "description": "해양 사이버보안 분야의 사이버훈련 시나리오 및 교육 콘텐츠를 연구·개발하는 과제입니다.",
+      "descriptionEn": "A project researching and developing cyber-training scenarios and educational content for maritime cybersecurity.",
+      "image": "",
+      "detail": "상세 내용은 추후 업데이트 예정입니다.",
+      "detailEn": "Details to be updated soon."
+    },
+    {
+      "title": "스마트쉽 인프라 취약점 분석, 검증 도구 및 보안 기술 개발",
+      "titleEn": "Smart Ship Infrastructure Vulnerability Analysis and Development of Verification Tools and Security Technologies",
+      "period": "2024.07 - 2024.11",
+      "funding": "국립한국해양대학교 산학협력단",
+      "description": "스마트십 인프라의 보안 취약점을 분석하고, 검증 도구 및 보안 기술을 개발하는 연구과제입니다.",
+      "descriptionEn": "A research project analyzing security vulnerabilities in smart ship infrastructure and developing verification tools and security technologies.",
+      "image": "",
+      "detail": "상세 내용은 추후 업데이트 예정입니다.",
+      "detailEn": "Details to be updated soon."
+    },
+    {
+      "title": "해양 사이버 공격 유형 분석 및 대응방안 연구",
+      "titleEn": "Analysis of Maritime Cyberattack Types and Countermeasures",
+      "period": "2024",
+      "funding": "국립한국해양대학교 산학협력단",
+      "description": "해양 분야 사이버 공격 유형을 분석하고 대응방안을 연구하는 과제입니다.",
+      "descriptionEn": "A project analyzing types of cyberattacks in the maritime domain and researching countermeasures.",
+      "image": "",
+      "detail": "상세 내용은 추후 업데이트 예정입니다.",
+      "detailEn": "Details to be updated soon."
+    },
+    {
+      "title": "해양선박 법·정책 분야 사이버훈련 시나리오·콘텐츠 개발",
+      "titleEn": "Development of Cyber-Training Scenarios and Content for Maritime Law and Policy",
+      "period": "2024.04 - 2024.10",
+      "funding": "국립한국해양대학교 산학협력단",
+      "description": "해양선박 관련 법·정책 분야의 사이버훈련 시나리오 및 교육 콘텐츠를 개발하는 연구과제입니다.",
+      "descriptionEn": "A research project developing cyber-training scenarios and educational content in the field of maritime law and policy.",
+      "image": "",
+      "detail": "상세 내용은 추후 업데이트 예정입니다.",
+      "detailEn": "Details to be updated soon."
     }
   ],
   "facility": [

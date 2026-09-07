@@ -5,7 +5,41 @@
     {
       "date": "2026-08-27",
       "title": "연구실 홈페이지 오픈",
+      "titleEn": "Lab Website Launched",
       "content": "연구실 홈페이지를 새롭게 오픈했습니다.",
+      "contentEn": "We are excited to launch our new lab website.",
+      "link": ""
+    },
+    {
+      "date": "2026",
+      "title": "이대성 교수 Excellent Paper Award 수상",
+      "titleEn": "Prof. Daesung Lee Receives Excellent Paper Award",
+      "content": "Korea Institute of Information and Communication Engineering에서 Excellent Paper Award를 수상했습니다.",
+      "contentEn": "Received the Excellent Paper Award from the Korea Institute of Information and Communication Engineering (KIICE).",
+      "link": ""
+    },
+    {
+      "date": "2025",
+      "title": "이대성 교수 Excellent Paper Award 수상",
+      "titleEn": "Prof. Daesung Lee Receives Excellent Paper Award",
+      "content": "한국정보통신학회에서 Excellent Paper Award를 수상했습니다.",
+      "contentEn": "Received the Excellent Paper Award from the Korea Institute of Information and Communication Engineering (KIICE).",
+      "link": ""
+    },
+    {
+      "date": "2025",
+      "title": "이대성 교수 우수논문상 수상",
+      "titleEn": "Prof. Daesung Lee Receives Best Paper Award",
+      "content": "한국정보통신학회에서 우수논문상을 수상했습니다.",
+      "contentEn": "Received the Best Paper Award from the Korea Institute of Information and Communication Engineering (KIICE).",
+      "link": ""
+    },
+    {
+      "date": "2024",
+      "title": "이대성 교수 우수논문상 수상",
+      "titleEn": "Prof. Daesung Lee Receives Best Paper Award",
+      "content": "한국정보통신학회에서 우수논문상을 수상했습니다.",
+      "contentEn": "Received the Best Paper Award from the Korea Institute of Information and Communication Engineering (KIICE).",
       "link": ""
     }
   ]

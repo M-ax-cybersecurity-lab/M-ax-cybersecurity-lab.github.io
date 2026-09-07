@@ -6,10 +6,187 @@
       "year": 2026,
       "items": [
         {
+          "type": "Domestic Journal",
+          "authors": "확인 필요",
+          "title": "AI 생태계의 성숙도 측정을 위한 통합지표 개발 선행연구",
+          "titleEn": "A Preliminary Study on Developing an Integrated Index for Measuring the Maturity of the AI Ecosystem",
+          "venue": "한국정보통신학회논문지, 제30권, pp.54-61",
+          "link": ""
+        },
+        {
+          "type": "International Conference",
+          "authors": "확인 필요",
+          "title": "DeferID: Deferring New-ID Assignment via GT-Free Tracker-Level Identity Recovery in Online Multi-Object Tracking",
+          "venue": "The 18th International Conference on Future Information and Communication Engineering",
+          "link": ""
+        },
+        {
+          "type": "Domestic Conference",
+          "authors": "확인 필요",
+          "title": "멀티 에이전트 LLM 기반 소프트웨어 개발 실습 교육 방안",
+          "titleEn": "A Multi-Agent LLM-Based Approach to Hands-On Software Development Education",
+          "venue": "2026년 한국정보통신학회 춘계종합학술대회",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "items": [
+        {
           "type": "International Journal",
-          "authors": "G. Hong, C. Kim, Y. Lee",
-          "title": "논문 제목이 들어갈 자리 (예시)",
-          "venue": "저널/학회명, vol. X, pp. XX-XX",
+          "authors": "Hong Danh Thai, YuanYuan Liu, Ngoc-Bao-Van Le, Daesung Lee(교신저자), Jun-Ho Huh",
+          "title": "Improved Attendance Tracking System for Coffee Farm Workers Applying Computer Vision",
+          "venue": "Applied Sciences (Basel), pp.1-22",
+          "link": ""
+        },
+        {
+          "type": "International Journal",
+          "authors": "Van-Phong Truong, Daesung Lee(교신저자), Jun-Ho Huh",
+          "title": "Crunch Mode: Make Early Predictions about Risk of Stroke Using Machine Learning",
+          "venue": "Journal of Information and Communication Convergence Engineering, 제23권, pp.17-25",
+          "link": ""
+        },
+        {
+          "type": "Domestic Conference",
+          "authors": "Hong Danh Thai, YuanYuan Liu, Ngoc-Bao-Van Le, Daesung Lee(교신저자), Jun-Ho Huh",
+          "title": "Improved Attendance Tracking System for Coffee Farm Workers",
+          "venue": "2025 한국정보통신학회 추계학술대회",
+          "link": ""
+        },
+        {
+          "type": "Domestic Conference",
+          "authors": "Ngoc-Bao-Van Le, YuanYuan Liu, Minho Kim, Daesung Lee(교신저자), Jun-Ho Huh",
+          "title": "Overview on Big Data-Driven Applications for Non-Destructive Testing",
+          "venue": "2025 한국정보통신학회 추계학술대회",
+          "link": ""
+        },
+        {
+          "type": "International Conference",
+          "authors": "Thi-Ngot Pham, Daesung Lee(공동저자), Hee-Jung Lee, Jun-Ho Huh",
+          "title": "Grading Single Oyster based on Their Features Using AI Technologies",
+          "venue": "2025 Future Information and Communication Engineering",
+          "link": ""
+        },
+        {
+          "type": "International Conference",
+          "authors": "Ngoc-Bao-Van Le, Daesung Lee(공동저자), Jun-Ho Huh",
+          "title": "Enhanced Aquaculture Product Quality Control in Supply Chains: Digital Twin Integration Approach",
+          "venue": "2025 Future Information and Communication Engineering",
+          "link": ""
+        },
+        {
+          "type": "International Conference",
+          "authors": "Athiruj Poositaporn, Hanmin Jung, Daesung Lee(공동저자)",
+          "title": "A Study of a SQL-Generating RAG System for Improving Client Engagement",
+          "venue": "2025 Future Information and Communication Engineering",
+          "link": ""
+        },
+        {
+          "type": "International Conference",
+          "authors": "Hong-Danh Thai, Kang-Rae Kim, Daesung Lee(공동저자), Jun-Ho Huh",
+          "title": "Intelligent Traffic Composition Monitoring System: Implications for 15-minute City Context",
+          "venue": "2025 Future Information and Communication Engineering",
+          "link": ""
+        },
+        {
+          "type": "Domestic Conference",
+          "authors": "Y. Park, S. Lee, Daesung Lee(공동저자), Jun-Ho Huh",
+          "title": "Detecting Intrusions in Smart Ships by Analyzing Network Data",
+          "venue": "한국정보통신학회 제57회 춘계종합학술대회",
+          "link": ""
+        },
+        {
+          "type": "Domestic Conference",
+          "authors": "Y. Park, Daesung Lee(공동저자), Jun-Ho Huh",
+          "title": "Hybrid Intrusion Detection Model for Smart Grid Systems Using Signature and Behavioral Learning",
+          "venue": "한국정보통신학회 제57회 춘계종합학술대회",
+          "link": ""
+        },
+        {
+          "type": "Domestic Conference",
+          "authors": "Daesung Lee(1저자), Jun-Ho Huh",
+          "title": "Overview of IoT Aquaculture System",
+          "venue": "한국정보통신학회 제57회 춘계종합학술대회",
+          "link": ""
+        },
+        {
+          "type": "Domestic Conference",
+          "authors": "Thi-Ngot Pham, Daesung Lee(공동저자), Y. Park, S. Lee, Y. Kim, Y. Kim, Hee-Jung Lee, Jun-Ho Huh",
+          "title": "A New Approach to Deep Learning-Assisted Dataset Creation Oyster",
+          "venue": "한국정보통신학회 제57회 춘계종합학술대회",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "items": [
+        {
+          "type": "Domestic Journal",
+          "authors": "이대성(1저자), 이주헌",
+          "title": "국내외 해사 사이버보안 가이드라인 개발 동향",
+          "titleEn": "Trends in the Development of Domestic and International Maritime Cybersecurity Guidelines",
+          "venue": "한국정보통신학회논문지, 제28권, pp.1609-1612",
+          "link": ""
+        },
+        {
+          "type": "Domestic Journal",
+          "authors": "박연웅, 이수민, 허준호, 이대성(교신저자)",
+          "title": "친환경 스마트선박 사이버 회복력 확보를 위한 데이터 수집 및 실시간 점검 기술 연구",
+          "titleEn": "A Study on Data Collection and Real-Time Monitoring Technology for Securing Cyber Resilience of Eco-Friendly Smart Ships",
+          "venue": "한국산업정보학회논문지, 제29권, pp.11-20",
+          "link": ""
+        },
+        {
+          "type": "International Journal",
+          "authors": "Hanchul Woo, Daesung Lee(공동저자), Jun-Ho Huh",
+          "title": "AgTech: A Survey on Digital Twins based Aquaculture Systems",
+          "venue": "IEEE Access, pp.1-18",
+          "link": ""
+        },
+        {
+          "type": "International Journal",
+          "authors": "Hong-Danh Thai, Ngoc-Bao-Van Le, Daesung Lee(공동저자), Jun-Ho Huh",
+          "title": "A Survey of Electrical Fire Causes Assessment Technology",
+          "venue": "IEEE Access, pp.1-17",
+          "link": ""
+        },
+        {
+          "type": "Domestic Conference",
+          "authors": "확인 필요",
+          "title": "친환경 스마트선박 사이버 복원력 확보에 관한 연구",
+          "titleEn": "A Study on Securing Cyber Resilience of Eco-Friendly Smart Ships",
+          "venue": "2024 한국산업정보학회 추계종합학술대회",
+          "link": ""
+        },
+        {
+          "type": "Domestic Conference",
+          "authors": "Van-Phong Truong, Daesung Lee(공동저자), Jun-Ho Huh",
+          "title": "Crunch Mode: Make Early Predictions about the Risk of Stroke",
+          "venue": "한국정보통신학회 2024년 인공지능 및 응용 워크숍",
+          "link": ""
+        },
+        {
+          "type": "Domestic Conference",
+          "authors": "Thi-Ngot Pham, Hee-Jung Lee, Daesung Lee(공동저자), Jun-Ho Huh",
+          "title": "Oyster Dataset Creation: A Hybrid Approach with Deep Learning and Semi-Automatic Labeling",
+          "venue": "한국정보통신학회 2024년 인공지능 및 응용 워크숍",
+          "link": ""
+        },
+        {
+          "type": "Domestic Conference",
+          "authors": "Hong-Danh Thai, Daesung Lee(공동저자), Jun-Ho Huh",
+          "title": "Marine Equipment E-commerce Data Hub System",
+          "venue": "한국정보통신학회 2024년 인공지능 및 응용 워크숍",
+          "link": ""
+        },
+        {
+          "type": "Domestic Conference",
+          "authors": "이대성(1저자, 단독저자)",
+          "title": "해양 사이버보안 현황 분석",
+          "titleEn": "An Analysis of the Current State of Maritime Cybersecurity",
+          "venue": "2024 한국정보통신학회 춘계종합학술대회",
           "link": ""
         }
       ]

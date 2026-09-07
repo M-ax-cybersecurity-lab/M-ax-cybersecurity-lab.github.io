@@ -201,23 +201,36 @@ function projectCardHtml(p, idx) {
   const img = p.image
     ? `<img class="card-thumb" src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}">`
     : "";
+  const titleHtml = p.titleEn
+    ? `<h3 class="lang-text" data-ko="${escapeHtml(p.title)}" data-en="${escapeHtml(p.titleEn)}">${escapeHtml(p.title)}</h3>`
+    : `<h3>${escapeHtml(p.title)}</h3>`;
+  const descHtml = p.descriptionEn
+    ? `<p class="lang-text" data-ko="${escapeHtml(p.description || "")}" data-en="${escapeHtml(p.descriptionEn)}">${escapeHtml(p.description || "")}</p>`
+    : `<p>${escapeHtml(p.description || "")}</p>`;
+  const toggle =
+    p.titleEn || p.descriptionEn
+      ? `<button type="button" class="lang-toggle" data-lang="ko">English</button>`
+      : "";
   return `<div class="card card-clickable" data-detail-idx="${idx}">
     ${img}
-    <h3>${escapeHtml(p.title)}</h3>
+    ${titleHtml}
     <p class="pub-meta">${escapeHtml(p.period || "")}${p.funding ? " · " + escapeHtml(p.funding) : ""}</p>
-    <p>${escapeHtml(p.description || "")}</p>
+    ${descHtml}
+    ${toggle}
   </div>`;
 }
 
 function wireDetailClicks(mount, items, metaFn) {
   mount.querySelectorAll("[data-detail-idx]").forEach((card) => {
-    card.addEventListener("click", () => {
+    card.addEventListener("click", (e) => {
+      if (e.target.closest(".lang-toggle")) return;
       const item = items[Number(card.getAttribute("data-detail-idx"))];
       openDetailModal({
         title: item.title || item.name,
         meta: metaFn ? metaFn(item) : "",
         image: item.image,
         detail: item.detail || item.description,
+        detailEn: item.detailEn || item.descriptionEn,
       });
     });
   });
@@ -272,6 +285,7 @@ async function renderResearch() {
     wireDetailClicks(projectsMount, research.projects, (p) =>
       [p.period, p.funding].filter(Boolean).join(" · ")
     );
+    wireLangToggles(projectsMount);
   }
   if (facilityMount) {
     facilityMount.innerHTML = research.facility.map(facilityCardHtml).join("");
@@ -301,17 +315,28 @@ async function renderPublications() {
       (group) => `
       <div class="pub-year">${group.year}</div>
       ${group.items
-        .map(
-          (item) => `
+        .map((item) => {
+          const titleInner = item.titleEn
+            ? `<span class="lang-text" data-ko="${escapeHtml(item.title)}" data-en="${escapeHtml(item.titleEn)}">${escapeHtml(item.title)}</span>`
+            : escapeHtml(item.title);
+          const titleHtml = item.link
+            ? `<a href="${escapeHtml(item.link)}" target="_blank" rel="noopener">${titleInner}</a>`
+            : titleInner;
+          const toggle = item.titleEn
+            ? `<button type="button" class="lang-toggle" data-lang="ko">English</button>`
+            : "";
+          return `
         <div class="pub-item">
           <span class="pub-type">${escapeHtml(item.type)}</span>
-          <div class="pub-title">${item.link ? `<a href="${escapeHtml(item.link)}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a>` : escapeHtml(item.title)}</div>
+          <div class="pub-title">${titleHtml}</div>
           <div class="pub-meta">${escapeHtml(item.authors)} — ${escapeHtml(item.venue)}</div>
-        </div>`
-        )
+          ${toggle}
+        </div>`;
+        })
         .join("")}`
     )
     .join("");
+  wireLangToggles(mount);
 }
 
 async function renderNews() {
@@ -321,17 +346,32 @@ async function renderNews() {
 
   mount.innerHTML = news
     .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .map(
-      (n) => `
+    .map((n) => {
+      const titleInner = n.titleEn
+        ? `<span class="lang-text" data-ko="${escapeHtml(n.title)}" data-en="${escapeHtml(n.titleEn)}">${escapeHtml(n.title)}</span>`
+        : escapeHtml(n.title);
+      const titleHtml = n.link
+        ? `<a href="${escapeHtml(n.link)}" target="_blank" rel="noopener">${titleInner}</a>`
+        : titleInner;
+      const contentHtml = n.contentEn
+        ? `<div class="news-content lang-text" data-ko="${escapeHtml(n.content)}" data-en="${escapeHtml(n.contentEn)}">${escapeHtml(n.content)}</div>`
+        : `<div class="news-content">${escapeHtml(n.content)}</div>`;
+      const toggle =
+        n.titleEn || n.contentEn
+          ? `<button type="button" class="lang-toggle" data-lang="ko">English</button>`
+          : "";
+      return `
       <div class="news-item">
         <div class="news-date">${escapeHtml(n.date)}</div>
         <div>
-          <div class="news-title">${n.link ? `<a href="${escapeHtml(n.link)}" target="_blank" rel="noopener">${escapeHtml(n.title)}</a>` : escapeHtml(n.title)}</div>
-          <div class="news-content">${escapeHtml(n.content)}</div>
+          <div class="news-title">${titleHtml}</div>
+          ${contentHtml}
+          ${toggle}
         </div>
-      </div>`
-    )
+      </div>`;
+    })
     .join("");
+  wireLangToggles(mount);
 }
 
 renderPeople();
