@@ -20,9 +20,22 @@
       "role": "MS",
       "name": "Sungyoon Jung",
       "title": "M.S. Student",
-      "photo": "",
+      "photo": "/images/people/Sungyoon_Jung.jpg",
       "email": "meraki4.1st@gmail.com",
       "bio": "Research interests: Ship Cybersecurity, AX Security.",
+      "cv": "Education\n- B.S. in Navigation, Dept. of Offshore Plant Operations, Korea Maritime & Ocean University (2021)\n\nWork Experience\n- Navigation Officer, HMM Ocean Service (2021–2024)\n- Engineer Intern, Ship Cybersecurity Team, Seanet (2026)",
+      "links": {
+        "github": ""
+      }
+    },
+    {
+      "role": "MS",
+      "name": "Velayudhan Abhirami",
+      "title": "M.S. Student",
+      "photo": "/images/people/velayudhan-abhirami.jpg",
+      "email": "velayudhanabhirami@g.kmou.ac.kr",
+      "bio": "Research interests: Maritime Cybersecurity, AX Security.",
+      "cv": "Education\n- B.Sc. in Digital and Cyber Forensic Science, Bharathiar University (2024)",
       "links": {
         "github": ""
       }
