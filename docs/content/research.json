@@ -18,19 +18,27 @@
       "descriptionEn": "Analyzes cybersecurity threats and researches countermeasures for OT/ICS environments across the maritime industry, including ships, ports, and Maritime Autonomous Surface Ships (MASS)."
     },
     {
-      "title": "Applied Cryptography & Network Security",
-      "description": "네트워크 보안 프로토콜과 암호학적 기법을 활용한 안전한 시스템 설계를 연구합니다.",
-      "descriptionEn": "Researches secure system design using network security protocols and cryptographic techniques."
+      "title": "Convergence Security & Network Security",
+      "description": "IoT 및 해양·통신·제어 시스템이 결합된 융합 시스템 전반의 보안 취약점 분석과 네트워크 보안 프로토콜을 연구합니다.",
+      "descriptionEn": "Researches security vulnerabilities across converged systems combining IoT, maritime, communication, and control systems, along with network security protocols."
     }
   ],
   "projects": [
     {
-      "title": "프로젝트명 (예시)",
-      "period": "2025 - 2026",
-      "funding": "지원기관명 (예시)",
-      "description": "프로젝트 개요 설명이 들어갈 자리입니다.",
+      "title": "해양 AX 인재양성 부트캠프 사업",
+      "period": "2024 - 진행중",
+      "funding": "확인 예정",
+      "description": "해양 분야 AI 전환(AX)을 이끌 전문인재를 양성하는 부트캠프형 교육 사업입니다.",
       "image": "",
-      "detail": "프로젝트의 배경, 목표, 세부 연구 내용, 참여 연구원, 성과 등 상세 설명이 들어갈 자리입니다."
+      "detail": "상세 내용은 추후 업데이트 예정입니다."
+    },
+    {
+      "title": "정보보호특성화대학 사업단",
+      "period": "2024 - 진행중",
+      "funding": "확인 예정",
+      "description": "정보보호 분야 전문인력 양성을 위한 정보보호특성화대학 지원 사업입니다.",
+      "image": "",
+      "detail": "상세 내용은 추후 업데이트 예정입니다."
     }
   ],
   "facility": [

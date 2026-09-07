@@ -2,7 +2,7 @@
   "welcomeEyebrow": "Welcome",
   "welcomeTitle": "연구실 소개",
   "tagline": "Maritime AI & Cybersecurity Research",
-  "welcomeMessage": "저희 연구실은 인공지능 기반 보안 기술과 해양 사이버보안 문제를 연구합니다.",
+  "welcomeMessage": "우리 연구실은 인공지능 기반 보안 기술과 해양 사이버보안 문제를 연구합니다.",
   "welcomeMessageEn": "Our lab researches AI-based security technologies and maritime cybersecurity challenges.",
   "welcomeCards": [
     {
@@ -43,10 +43,10 @@
       "descriptionEn": "Provides equipment needed for research, including personal laptops, PCs, and GPU servers."
     },
     {
-      "title": "공공기관협력 및 인턴십 연계",
-      "titleEn": "Public Institution Collaboration & Internships",
-      "description": "공공기관 공동 연구 및 인턴십 기회를 연계합니다.",
-      "descriptionEn": "Connects members with joint research and internship opportunities with public institutions."
+      "title": "공공기관, 연구소, 산업체 협력 및 인턴쉽",
+      "titleEn": "Public Institution, Research Institute & Industry Collaboration and Internships",
+      "description": "공공기관, 연구소, 산업체와의 협력 연구 및 인턴십 기회를 제공합니다.",
+      "descriptionEn": "Provides opportunities for collaborative research and internships with public institutions, research institutes, and industry."
     }
   ],
   "contactTitle": "Contact us",
