@@ -3,18 +3,21 @@
   "welcomeTitle": "연구실 소개",
   "tagline": "Maritime AI & Cybersecurity Research",
   "welcomeMessage": "저희 연구실은 인공지능 기반 보안 기술과 해양 사이버보안 문제를 연구합니다.",
+  "welcomeMessageEn": "Our lab researches AI-based security technologies and maritime cybersecurity challenges.",
   "welcomeCards": [
     {
       "title": "AI Security",
       "description": "AI를 이용한 공격·방어 기술의 확산과, 탑재된 AI 모델의 보안 취약점을 함께 연구합니다.",
       "image": "",
-      "detail": "연구 배경\n- 자율운항선박(MASS) 등 AI가 결합된 해양 시스템이 늘어나면서, AI를 활용한 공격·방어 기술과 AI 모델 자체의 보안 취약점 모두가 중요한 연구 주제로 떠오르고 있습니다.\n\nAI 에이전틱 공격·방어 확산\n- AI 에이전트를 활용한 자동화된 공격 기법 및 대응 방어 기술\n- AI 기반 이상 탐지·침입 탐지 등 보안 자동화 기술\n\n탑재 AI 모델 취약점\n- 적대적 공격(Adversarial Attack) 기법 및 방어 기술\n- AI 모델의 취약점 분석 및 강건성(Robustness) 평가\n- 신뢰 가능한(Trustworthy) AI 시스템 설계"
+      "detail": "연구 배경\n- 자율운항선박(MASS) 등 AI가 결합된 해양 시스템이 늘어나면서, AI를 활용한 공격·방어 기술과 AI 모델 자체의 보안 취약점 모두가 중요한 연구 주제로 떠오르고 있습니다.\n\nAI 에이전틱 공격·방어 확산\n- AI 에이전트를 활용한 자동화된 공격 기법 및 대응 방어 기술\n- AI 기반 이상 탐지·침입 탐지 등 보안 자동화 기술\n\n탑재 AI 모델 취약점\n- 적대적 공격(Adversarial Attack) 기법 및 방어 기술\n- AI 모델의 취약점 분석 및 강건성(Robustness) 평가\n- 신뢰 가능한(Trustworthy) AI 시스템 설계",
+      "detailEn": "Research Background\n- As AI-equipped maritime systems such as autonomous ships (MASS) become more common, both AI-driven attack/defense techniques and the security vulnerabilities of AI models themselves have become important research topics.\n\nAI-Agentic Attack & Defense Growth\n- Automated attack techniques using AI agents and corresponding defense technologies\n- AI-based security automation such as anomaly and intrusion detection\n\nOnboard AI Model Vulnerabilities\n- Adversarial attack techniques and defenses\n- Vulnerability analysis and robustness evaluation of AI models\n- Design of trustworthy AI systems"
     },
     {
       "title": "Maritime Cybersecurity",
       "description": "선박, 항만, 자율운항선박(MASS) 등 해양산업 전반의 사이버보안을 연구합니다.",
       "image": "",
-      "detail": "연구 배경\n- 선박·항만 시설의 디지털화·자동화와 자율운항선박(MASS, Maritime Autonomous Surface Ships)의 등장으로, 항해·기관 제어시스템 등 운영기술(OT) 환경이 새로운 사이버 위협에 노출되고 있습니다.\n\n주요 연구 주제\n- 선박 운영기술(OT/ICS) 보안 및 사이버복원력\n- 자율운항선박(MASS) 사이버보안\n- 항만 인프라 및 물류 시스템 보안\n- 해양 기자재(항해·통신 장비 등) 보안성 평가\n\n관련 국제표준\n- IACS UR E26 (Cyber resilience of ships)\n- IACS UR E27 (Cyber resilience of on-board systems and equipment)\n- 2024년 7월 이후 건조계약 선박부터 적용되는 국제선급연합회(IACS) 사이버복원력 요건 대응 연구 수행"
+      "detail": "연구 배경\n- 선박·항만 시설의 디지털화·자동화와 자율운항선박(MASS, Maritime Autonomous Surface Ships)의 등장으로, 항해·기관 제어시스템 등 운영기술(OT) 환경이 새로운 사이버 위협에 노출되고 있습니다.\n\n주요 연구 주제\n- 선박 운영기술(OT/ICS) 보안 및 사이버복원력\n- 자율운항선박(MASS) 사이버보안\n- 항만 인프라 및 물류 시스템 보안\n- 해양 기자재(항해·통신 장비 등) 보안성 평가\n\n관련 국제표준\n- IACS UR E26 (Cyber resilience of ships)\n- IACS UR E27 (Cyber resilience of on-board systems and equipment)\n- 2024년 7월 이후 건조계약 선박부터 적용되는 국제선급연합회(IACS) 사이버복원력 요건 대응 연구 수행",
+      "detailEn": "Research Background\n- With the digitalization and automation of ships and port facilities, and the emergence of Maritime Autonomous Surface Ships (MASS), navigation and machinery control systems (OT environments) are increasingly exposed to new cyber threats.\n\nMain Research Topics\n- Ship operational technology (OT/ICS) security and cyber resilience\n- Cybersecurity of Maritime Autonomous Surface Ships (MASS)\n- Port infrastructure and logistics system security\n- Security assessment of maritime equipment (navigation/communication systems, etc.)\n\nRelated International Standards\n- IACS UR E26 (Cyber resilience of ships)\n- IACS UR E27 (Cyber resilience of on-board systems and equipment)\n- Research addressing IACS cyber resilience requirements applicable to ships contracted for construction on or after July 2024"
     }
   ],
   "benefitsEyebrow": "Benefits",
@@ -23,19 +26,27 @@
   "benefits": [
     {
       "title": "대학원 장학금 지원",
-      "description": "등록금 및 생활비 장학금을 지원합니다."
+      "titleEn": "Graduate Scholarships",
+      "description": "등록금 및 생활비 장학금을 지원합니다.",
+      "descriptionEn": "Provides tuition and living-expense scholarships."
     },
     {
       "title": "학회/논문 참가비 지원",
-      "description": "국내외 학회 발표 및 논문 게재 비용을 지원합니다."
+      "titleEn": "Conference & Publication Fee Support",
+      "description": "국내외 학회 발표 및 논문 게재 비용을 지원합니다.",
+      "descriptionEn": "Supports domestic and international conference presentation and publication fees."
     },
     {
       "title": "연구 장비 지원",
-      "description": "개인 노트북, PC, GPU 서버 등 연구에 필요한 장비를 지원합니다."
+      "titleEn": "Research Equipment Support",
+      "description": "개인 노트북, PC, GPU 서버 등 연구에 필요한 장비를 지원합니다.",
+      "descriptionEn": "Provides equipment needed for research, including personal laptops, PCs, and GPU servers."
     },
     {
       "title": "공공기관협력 및 인턴십 연계",
-      "description": "공공기관 공동 연구 및 인턴십 기회를 연계합니다."
+      "titleEn": "Public Institution Collaboration & Internships",
+      "description": "공공기관 공동 연구 및 인턴십 기회를 연계합니다.",
+      "descriptionEn": "Connects members with joint research and internship opportunities with public institutions."
     }
   ],
   "contactTitle": "Contact us",

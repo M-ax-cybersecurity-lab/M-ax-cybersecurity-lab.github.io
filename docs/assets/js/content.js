@@ -10,6 +10,38 @@ function escapeHtml(str = "") {
   }[c]));
 }
 
+// Renders a card's title + description with an optional English translation
+// for either. When at least one translation exists, a small "English"/"한글"
+// toggle button swaps every translated piece in that card together.
+function bilingualCardBody(titleKo, titleEn, descKo, descEn) {
+  const titleHtml = titleEn
+    ? `<h3 class="lang-text" data-ko="${escapeHtml(titleKo)}" data-en="${escapeHtml(titleEn)}">${escapeHtml(titleKo)}</h3>`
+    : `<h3>${escapeHtml(titleKo)}</h3>`;
+  const descHtml = descEn
+    ? `<p class="lang-text" data-ko="${escapeHtml(descKo)}" data-en="${escapeHtml(descEn)}">${escapeHtml(descKo)}</p>`
+    : `<p>${escapeHtml(descKo)}</p>`;
+  const toggle =
+    titleEn || descEn
+      ? `<button type="button" class="lang-toggle" data-lang="ko">English</button>`
+      : "";
+  return titleHtml + descHtml + toggle;
+}
+
+function wireLangToggles(container) {
+  container.querySelectorAll(".lang-toggle").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const card = btn.closest(".card") || btn.parentElement;
+      const showEn = btn.getAttribute("data-lang") !== "en";
+      card.querySelectorAll(".lang-text").forEach((el) => {
+        el.textContent = showEn ? el.getAttribute("data-en") : el.getAttribute("data-ko");
+      });
+      btn.setAttribute("data-lang", showEn ? "en" : "ko");
+      btn.textContent = showEn ? "한글" : "English";
+    });
+  });
+}
+
 function personCard(p, idx) {
   const photo = p.photo
     ? `<img class="person-photo" src="${escapeHtml(p.photo)}" alt="${escapeHtml(p.name)}">`
@@ -79,7 +111,18 @@ function formatSectionedText(text) {
     .join("")}</div>`;
 }
 
-function openDetailModal({ title, meta, image, detail, structured }) {
+let modalDetailState = { ko: "", en: "", structured: false };
+
+function renderModalBody(text, structured) {
+  const bodyEl = document.getElementById("detailModalBody");
+  if (structured && text) {
+    bodyEl.innerHTML = formatSectionedText(text);
+  } else {
+    bodyEl.textContent = text || "";
+  }
+}
+
+function openDetailModal({ title, meta, image, detail, detailEn, structured }) {
   const modal = document.getElementById("detailModal");
   if (!modal) return;
 
@@ -97,11 +140,18 @@ function openDetailModal({ title, meta, image, detail, structured }) {
   metaEl.textContent = meta || "";
   metaEl.style.display = meta ? "block" : "none";
 
-  const bodyEl = document.getElementById("detailModalBody");
-  if (structured && detail) {
-    bodyEl.innerHTML = formatSectionedText(detail);
-  } else {
-    bodyEl.textContent = detail || "";
+  modalDetailState = { ko: detail || "", en: detailEn || "", structured: !!structured };
+  renderModalBody(modalDetailState.ko, modalDetailState.structured);
+
+  const langBtn = document.getElementById("modalLangToggle");
+  if (langBtn) {
+    if (detailEn) {
+      langBtn.hidden = false;
+      langBtn.setAttribute("data-lang", "ko");
+      langBtn.textContent = "English";
+    } else {
+      langBtn.hidden = true;
+    }
   }
 
   modal.querySelector(".detail-modal-panel").classList.toggle("wide", !!structured);
@@ -127,6 +177,16 @@ function wireDetailModalDismiss() {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeDetailModal();
   });
+
+  const langBtn = document.getElementById("modalLangToggle");
+  if (langBtn) {
+    langBtn.addEventListener("click", () => {
+      const showEn = langBtn.getAttribute("data-lang") !== "en";
+      renderModalBody(showEn ? modalDetailState.en : modalDetailState.ko, modalDetailState.structured);
+      langBtn.setAttribute("data-lang", showEn ? "en" : "ko");
+      langBtn.textContent = showEn ? "한글" : "English";
+    });
+  }
 }
 wireDetailModalDismiss();
 
@@ -186,6 +246,7 @@ async function renderWelcomeCards() {
         title: c.title,
         image: c.image,
         detail: c.detail,
+        detailEn: c.detailEn,
         structured: true,
       });
     });
@@ -202,8 +263,9 @@ async function renderResearch() {
 
   if (areasMount) {
     areasMount.innerHTML = research.areas
-      .map((a) => `<div class="card"><h3>${escapeHtml(a.title)}</h3><p>${escapeHtml(a.description)}</p></div>`)
+      .map((a) => `<div class="card">${bilingualCardBody(a.title, a.titleEn, a.description, a.descriptionEn)}</div>`)
       .join("");
+    wireLangToggles(areasMount);
   }
   if (projectsMount) {
     projectsMount.innerHTML = research.projects.map(projectCardHtml).join("");
@@ -223,8 +285,9 @@ async function renderBenefits() {
   const benefits = await fetch("/content/about.json", { cache: "no-cache" }).then((r) => r.json()).then((d) => d.benefits);
 
   mount.innerHTML = benefits
-    .map((b) => `<div class="card"><h3>${escapeHtml(b.title)}</h3><p>${escapeHtml(b.description)}</p></div>`)
+    .map((b) => `<div class="card">${bilingualCardBody(b.title, b.titleEn, b.description, b.descriptionEn)}</div>`)
     .join("");
+  wireLangToggles(mount);
 }
 
 async function renderPublications() {

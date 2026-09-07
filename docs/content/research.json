@@ -9,15 +9,18 @@
   "areas": [
     {
       "title": "AI Security",
-      "description": "AI 에이전트를 이용한 공격·방어 기술 확산과, 자율운항선박 등에 탑재되는 AI 모델의 취약점 분석 및 강건성 연구를 수행합니다."
+      "description": "AI 에이전트를 이용한 공격·방어 기술 확산과, 자율운항선박 등에 탑재되는 AI 모델의 취약점 분석 및 강건성 연구를 수행합니다.",
+      "descriptionEn": "Researches the growth of attack/defense techniques using AI agents, and the vulnerability and robustness of AI models deployed on systems such as autonomous ships."
     },
     {
       "title": "Maritime Cybersecurity",
-      "description": "선박, 항만, 자율운항선박(MASS) 등 해양산업 전반의 OT/ICS 환경을 대상으로 한 사이버보안 위협 분석과 대응 기술을 연구합니다."
+      "description": "선박, 항만, 자율운항선박(MASS) 등 해양산업 전반의 OT/ICS 환경을 대상으로 한 사이버보안 위협 분석과 대응 기술을 연구합니다.",
+      "descriptionEn": "Analyzes cybersecurity threats and researches countermeasures for OT/ICS environments across the maritime industry, including ships, ports, and Maritime Autonomous Surface Ships (MASS)."
     },
     {
       "title": "Applied Cryptography & Network Security",
-      "description": "네트워크 보안 프로토콜과 암호학적 기법을 활용한 안전한 시스템 설계를 연구합니다."
+      "description": "네트워크 보안 프로토콜과 암호학적 기법을 활용한 안전한 시스템 설계를 연구합니다.",
+      "descriptionEn": "Researches secure system design using network security protocols and cryptographic techniques."
     }
   ],
   "projects": [

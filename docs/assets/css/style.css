@@ -171,6 +171,12 @@ h1, h2, h3, h4 { line-height: 1.3; margin: 0 0 0.5em; }
   font-size: 1.05rem;
   white-space: pre-line;
 }
+.hero p.hero-en {
+  color: #8fa3b8;
+  font-size: 0.92rem;
+  margin-top: 6px;
+}
+.hero p.hero-en:empty { display: none; }
 .hero-meta {
   margin-top: 28px;
   display: flex;
@@ -272,6 +278,21 @@ h1, h2, h3, h4 { line-height: 1.3; margin: 0 0 0.5em; }
   margin-bottom: 6px;
   line-height: 1.5;
 }
+.lang-toggle {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px 10px;
+  border: 1px solid var(--color-cyan-500);
+  border-radius: 100px;
+  background: none;
+  color: var(--color-cyan-500);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.lang-toggle:hover { background: var(--color-cyan-500); color: #fff; }
+.modal-lang-toggle { margin-top: -6px; margin-bottom: 16px; }
 .detail-modal-close {
   position: absolute;
   top: 16px;
