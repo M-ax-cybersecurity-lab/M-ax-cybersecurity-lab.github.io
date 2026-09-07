@@ -2,7 +2,7 @@
   "welcomeEyebrow": "Welcome",
   "welcomeTitle": "연구실 소개",
   "tagline": "Maritime AI & Cybersecurity Research",
-  "welcomeMessage": "저희 연구실은 한국해양대학교 해사인공지능보안학과 사이버보안전공 소속으로, 인공지능 기반 보안 기술과 해양 사이버보안 문제를 연구합니다.",
+  "welcomeMessage": "저희 연구실은 인공지능 기반 보안 기술과 해양 사이버보안 문제를 연구합니다.",
   "welcomeCards": [
     {
       "title": "AI Security",
@@ -11,10 +11,6 @@
     {
       "title": "Maritime Cybersecurity",
       "description": "선박·항만 시스템 및 OT/ICS 환경의 사이버보안을 연구합니다."
-    },
-    {
-      "title": "Applied Cryptography",
-      "description": "안전한 시스템 설계를 위한 암호학적 기법을 연구합니다."
     }
   ],
   "benefitsEyebrow": "Benefits",
@@ -31,11 +27,11 @@
     },
     {
       "title": "연구 장비 지원",
-      "description": "개인 노트북, GPU 서버 등 연구에 필요한 장비를 지원합니다."
+      "description": "개인 노트북, PC, GPU 서버 등 연구에 필요한 장비를 지원합니다."
     },
     {
-      "title": "산학협력 및 인턴십 연계",
-      "description": "산업체 공동 연구 및 인턴십 기회를 연계합니다."
+      "title": "공공기관협력 및 인턴십 연계",
+      "description": "공공기관 공동 연구 및 인턴십 기회를 연계합니다."
     }
   ],
   "contactTitle": "Contact us",
