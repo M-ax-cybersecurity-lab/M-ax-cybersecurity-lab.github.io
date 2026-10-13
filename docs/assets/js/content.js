@@ -211,7 +211,7 @@ function projectCardHtml(p, idx) {
     p.titleEn || p.descriptionEn
       ? `<button type="button" class="lang-toggle" data-lang="ko">English</button>`
       : "";
-  return `<div class="card card-clickable" data-detail-idx="${idx}">
+  return `<div class="card">
     ${img}
     ${titleHtml}
     <p class="pub-meta">${escapeHtml(p.period || "")}${p.funding ? " · " + escapeHtml(p.funding) : ""}</p>
@@ -282,9 +282,6 @@ async function renderResearch() {
   }
   if (projectsMount) {
     projectsMount.innerHTML = research.projects.map(projectCardHtml).join("");
-    wireDetailClicks(projectsMount, research.projects, (p) =>
-      [p.period, p.funding].filter(Boolean).join(" · ")
-    );
     wireLangToggles(projectsMount);
   }
   if (facilityMount) {
