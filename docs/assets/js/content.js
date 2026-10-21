@@ -90,6 +90,7 @@ async function renderPeople() {
         title: person.name,
         meta: person.title,
         detail: person.cv,
+        detailEn: person.cvEn,
         structured: true,
       });
     });
