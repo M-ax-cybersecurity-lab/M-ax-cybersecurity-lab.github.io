@@ -1,0 +1,42 @@
+{
+  "enabled": true,
+  "version": "2026-10",
+  "title": "학부연구생 및 대학원생 모집",
+  "titleEn": "Now Recruiting: Undergraduate Researchers & Graduate Students",
+  "intro": "해사 AX 보안공학 연구실에서 AI 보안과 해사 사이버보안을 함께 연구할 학부연구생과 대학원생(석사·박사)을 모집합니다.",
+  "introEn": "The M-AX Cybersecurity Lab is recruiting undergraduate researchers and graduate students (M.S./Ph.D.) to work on AI security and maritime cybersecurity.",
+  "items": [
+    {
+      "label": "모집 대상",
+      "labelEn": "Who",
+      "value": "학부연구생 / 대학원생(석사·박사)",
+      "valueEn": "Undergraduate researchers / Graduate students (M.S./Ph.D.)"
+    },
+    {
+      "label": "연구 분야",
+      "labelEn": "Research Areas",
+      "value": "AI Security, 해사 사이버보안(선박·항만·자율운항선박)",
+      "valueEn": "AI Security, Maritime Cybersecurity (ships, ports, MASS)"
+    },
+    {
+      "label": "지원 혜택",
+      "labelEn": "Benefits",
+      "value": "대학원 장학금, 학회/논문 참가비 및 연구 장비 지원",
+      "valueEn": "Graduate scholarships, conference/publication fee and research equipment support"
+    },
+    {
+      "label": "지원 방법",
+      "labelEn": "How to Apply",
+      "value": "지원서 작성 후 이메일로 송부",
+      "valueEn": "Fill out the application form and send it by email"
+    }
+  ],
+  "contactButtonLabel": "이메일로 지원서 보내기",
+  "contactButtonLabelEn": "Send Application by Email",
+  "todayLabel": "오늘 하루 보지 않기",
+  "todayLabelEn": "Don't show today",
+  "dismissLabel": "더 이상 보지 않기",
+  "dismissLabelEn": "Don't show again",
+  "closeLabel": "닫기",
+  "closeLabelEn": "Close"
+}
