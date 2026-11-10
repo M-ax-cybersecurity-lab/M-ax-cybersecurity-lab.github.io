@@ -3,6 +3,23 @@
   "newsTitle": "공지 및 소식",
   "news": [
     {
+      "date": "2026-10-31",
+      "title": "K-머린터틀 사이버공방 Skill-up 특강 개최",
+      "titleEn": "K-Marine Turtle Cyber Offense & Defense Skill-up Program",
+      "content": "연구실이 주관·운영하는 「K-머린터틀 사이버공방 Skill-up Program」을 2026.10.31부터 12.05까지 토요일 13:30~17:30에 진행합니다. 기초반(G2 917호, 2회)에서는 선박 보안(UR E26/E27)과 LLM을 이용한 공격 로그 분석을, 심화반(G2 921호, 4회)에서는 DFIR, 모의해킹, CTFd 웹 해킹을 현업 전문가와 함께 실습합니다. 희망자는 누구나 참여할 수 있으며, 문의는 정성윤(010-9824-5603)에게 해주세요.",
+      "contentEn": "Our lab is organizing and running the K-Marine Turtle Cyber Offense & Defense Skill-up Program on Saturdays, 13:30–17:30, from Oct 31 to Dec 5, 2026. The Basic course (Room G2 917, 2 sessions) covers ship cybersecurity (IACS UR E26/E27) and LLM-based attack log analysis; the Advanced course (Room G2 921, 4 sessions) offers hands-on DFIR, penetration testing, and CTFd-based web hacking with industry experts. Open to anyone interested — contact Sungyoon Jung (+82-10-9824-5603) for details.",
+      "image": "/images/news/k-marine-turtle-skillup-2026.webp",
+      "link": ""
+    },
+    {
+      "date": "2026-10-23",
+      "title": "정성윤·이대성 교수, 한국정보통신학회 추계종합학술대회 우수논문상 수상",
+      "titleEn": "Sungyoon Jung & Prof. Daesung Lee Receive Best Paper Award at KIICE Fall Conference",
+      "content": "「IACS UR E26의 경계 통제 가정과 실증 요구의 범위」 논문이 2026년 한국정보통신학회 추계종합학술대회 우수논문상으로 선정되었습니다.",
+      "contentEn": "The paper \"The Boundary-Control Assumptions of IACS UR E26 and the Scope of Its Empirical Requirements\" was selected for the Best Paper Award at the 2026 KIICE Fall Conference.",
+      "link": ""
+    },
+    {
       "date": "2026-08-27",
       "title": "연구실 홈페이지 오픈",
       "titleEn": "Lab Website Launched",

@@ -320,12 +320,17 @@ async function renderPublications() {
           const titleHtml = item.link
             ? `<a href="${escapeHtml(item.link)}" target="_blank" rel="noopener">${titleInner}</a>`
             : titleInner;
-          const toggle = item.titleEn
+          const toggle = item.titleEn || item.awardEn
             ? `<button type="button" class="lang-toggle" data-lang="ko">English</button>`
             : "";
+          const awardHtml = !item.award
+            ? ""
+            : item.awardEn
+              ? `<span class="pub-award">🏆 <span class="lang-text" data-ko="${escapeHtml(item.award)}" data-en="${escapeHtml(item.awardEn)}">${escapeHtml(item.award)}</span></span>`
+              : `<span class="pub-award">🏆 ${escapeHtml(item.award)}</span>`;
           return `
         <div class="pub-item">
-          <span class="pub-type">${escapeHtml(item.type)}</span>
+          <span class="pub-type">${escapeHtml(item.type)}</span>${awardHtml}
           <div class="pub-title">${titleHtml}</div>
           <div class="pub-meta">${escapeHtml(item.authors)} — ${escapeHtml(item.venue)}</div>
           ${toggle}
@@ -358,14 +363,18 @@ async function renderNews() {
         n.titleEn || n.contentEn
           ? `<button type="button" class="lang-toggle" data-lang="ko">English</button>`
           : "";
+      const imageHtml = n.image
+        ? `<a class="news-image" href="${escapeHtml(n.image)}" target="_blank" rel="noopener"><img src="${escapeHtml(n.image)}" alt="${escapeHtml(n.title)}" loading="lazy"></a>`
+        : "";
       return `
       <div class="news-item">
         <div class="news-date">${escapeHtml(n.date)}</div>
-        <div>
+        <div class="news-body">
           <div class="news-title">${titleHtml}</div>
           ${contentHtml}
           ${toggle}
         </div>
+        ${imageHtml}
       </div>`;
     })
     .join("");

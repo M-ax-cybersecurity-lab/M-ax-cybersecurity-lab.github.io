@@ -6,6 +6,16 @@
       "year": 2026,
       "items": [
         {
+          "type": "Domestic Conference",
+          "authors": "Sungyoon Jung, Daesung Lee",
+          "title": "IACS UR E26의 경계 통제 가정과 실증 요구의 범위",
+          "titleEn": "The Boundary-Control Assumptions of IACS UR E26 and the Scope of Its Empirical Requirements",
+          "venue": "2026년 한국정보통신학회 추계종합학술대회",
+          "award": "우수논문상",
+          "awardEn": "Best Paper Award",
+          "link": ""
+        },
+        {
           "type": "Domestic Journal",
           "authors": "Daesung Lee, Teawoo Lee",
           "title": "AI 생태계의 성숙도 측정을 위한 통합지표 개발 선행연구",
